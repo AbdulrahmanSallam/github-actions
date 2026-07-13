@@ -1,0 +1,38 @@
+# name of workflow
+name: Hello World Workflow
+
+# specify event that this will apply
+on:
+  push:
+    branches: [main]
+
+# then define jobs that needs to be executed
+jobs:
+  say_hello: # job name
+    runs-on: ubuntu_latest # which image should be loaded on that server
+    steps:
+      - name: Print Hello World # step name
+        run: echo "Hello, world!"
+
+#comment
+
+# name: Abdularhman
+# age: 22
+# skills:
+#   - Frontend
+#   - Backend
+#   - Fullstack
+
+# sentence: "hello"
+
+# literal: |
+#   this is a block of text.
+#   this text will have
+#   line breaks
+
+# specify event that this will apply
+# on:
+#   push:
+#     branches: [main]
+#   pull_request:
+#     branch: [main]
